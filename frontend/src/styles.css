@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap');
+:root{font-family:'DM Sans',sans-serif;color:#172019;background:#f5f7f3;line-height:1.5}*{box-sizing:border-box}body{margin:0}.app{min-height:100vh}.nav{height:74px;background:#fff;border-bottom:1px solid #e5e9e4;display:flex;align-items:center;padding:0 7%;gap:48px;position:sticky;top:0;z-index:5}.brand{font:700 22px 'Space Grotesk';letter-spacing:-1px;cursor:pointer}.brand span{margin-left:3px}.nav nav{display:flex;gap:8px;flex:1}.nav button{border:0;background:transparent;padding:10px 14px;border-radius:10px;color:#657066;font:600 14px 'DM Sans';cursor:pointer}.nav nav button.active,.nav nav button:hover{background:#eef3ec;color:#172019}.profile{width:38px;height:38px;border-radius:50%;background:#172019!important;color:#fff!important}.hero{max-width:1120px;margin:0 auto;padding:75px 24px 55px;display:grid;grid-template-columns:1.4fr .7fr;gap:70px;align-items:center}.eyebrow{font-size:11px;letter-spacing:2px;font-weight:700;color:#68736a;margin:0 0 10px}.hero h1,.page h1{font:700 clamp(45px,6vw,74px)/.98 'Space Grotesk';letter-spacing:-4px;margin:0}.hero h1 em{font-style:normal}.sub{max-width:560px;color:#68736a;font-size:17px;margin-top:24px}.hero-card{background:#172019;color:white;border-radius:22px;padding:28px;box-shadow:0 20px 45px #17201920}.spark{font-size:28px;margin-bottom:25px}.hero-card strong{font:600 25px 'Space Grotesk'}.hero-card p{color:#c8d1c8}.meter{height:7px;background:#39443b;border-radius:10px;margin:25px 0 10px;overflow:hidden}.meter i{display:block;width:82%;height:100%;background:#d8ff61}.hero-card small{color:#aeb9af}.searchbox{max-width:1120px;margin:0 auto;padding:18px;background:#fff;border:1px solid #e2e8e1;border-radius:18px;display:grid;grid-template-columns:1.6fr .8fr .7fr auto;gap:10px;box-shadow:0 10px 30px #1720190b}.input-wrap{display:flex;align-items:center;border:1px solid #dde3dc;border-radius:11px;padding:0 13px}.input-wrap span{font-size:25px}.input-wrap input{border:0;outline:0;padding:13px;width:100%;font:inherit}.searchbox select,.search-btn{border:1px solid #dde3dc;border-radius:11px;padding:0 14px;background:#fff;font:500 14px 'DM Sans'}.search-btn,.primary{background:#172019;color:white;border:0;cursor:pointer}.search-btn{padding:0 25px}.content{max-width:1120px;margin:65px auto;padding:0 24px}.section-head{display:flex;justify-content:space-between;align-items:end;margin-bottom:24px}.section-head h2{font:600 32px 'Space Grotesk';margin:0}.section-head>span{color:#68736a;font-size:13px}.grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}.job-card{background:#fff;border:1px solid #e2e8e1;border-radius:17px;padding:22px;transition:.2s}.job-card:hover{transform:translateY(-3px);box-shadow:0 15px 35px #1720190b}.job-top{display:flex;justify-content:space-between}.logo{width:43px;height:43px;border-radius:12px;background:#edf2ea;display:grid;place-items:center;font:700 18px 'Space Grotesk'}.bookmark{border:0;background:none;font-size:25px;cursor:pointer;color:#879188}.bookmark.saved{color:#172019}.company{font-size:12px;font-weight:700;letter-spacing:.5px;margin:17px 0 3px;color:#68736a}.job-card h3{font:600 21px 'Space Grotesk';margin:0 0 7px}.muted{color:#758077;font-size:13px}.salary{font-weight:700;margin:14px 0}.chips{display:flex;gap:7px;flex-wrap:wrap;margin:15px 0}.chips span{font-size:11px;background:#f0f3ee;padding:6px 9px;border-radius:20px;color:#526056}.card-actions{display:flex;justify-content:space-between;align-items:center;margin-top:18px}.card-actions button:first-child{border:0;background:none;font-weight:700;cursor:pointer}.small{padding:9px 15px;border-radius:9px}.page{max-width:1120px;margin:70px auto;padding:0 24px}.page h1{font-size:54px;margin-bottom:40px}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:15px;margin-bottom:25px}.stats div{background:white;border:1px solid #e2e8e1;border-radius:16px;padding:22px}.stats b{display:block;font:700 32px 'Space Grotesk'}.stats span{color:#68736a;font-size:13px}.empty{background:#fff;border:1px dashed #cbd4ca;border-radius:16px;padding:35px;text-align:center;color:#68736a}.modal-backdrop{position:fixed;inset:0;background:#17201988;display:grid;place-items:center;padding:20px;z-index:20}.modal{background:#fff;max-width:600px;width:100%;border-radius:22px;padding:32px;position:relative;box-shadow:0 25px 70px #0004}.modal h2{font:700 34px 'Space Grotesk';margin:4px 0}.modal h3{font:600 17px 'Space Grotesk'}.close{position:absolute;right:18px;top:12px;border:0;background:none;font-size:30px;cursor:pointer}.modal .primary{padding:13px 20px;border-radius:10px;width:100%;margin-top:12px}.primary:disabled{opacity:.55;cursor:not-allowed}@media(max-width:800px){.nav{padding:0 20px;gap:10px}.nav nav button{padding:8px}.hero{grid-template-columns:1fr;padding-top:45px}.searchbox{margin:0 20px;grid-template-columns:1fr}.content,.page{padding:0 20px}.grid{grid-template-columns:1fr}.stats{grid-template-columns:1fr}.hero h1,.page h1{letter-spacing:-2px}}
+/* Resume Analyzer */
+.resume-box {
+  margin-top: 28px;
+  padding: 28px;
+  border: 1px solid #e5e7eb;
+  border-radius: 18px;
+  background: #ffffff;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+}
+
+.resume-box textarea {
+  width: 100%;
+  min-height: 260px;
+  padding: 18px;
+  border: 1px solid #d1d5db;
+  border-radius: 12px;
+  resize: vertical;
+  font-family: inherit;
+  font-size: 15px;
+  line-height: 1.6;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.resume-box textarea:focus {
+  border-color: #111827;
+}
+
+.resume-box .primary {
+  margin-top: 16px;
+}
+
+.resume-results {
+  margin-top: 28px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+}
+
+.result-card {
+  padding: 24px;
+  border: 1px solid #e5e7eb;
+  border-radius: 16px;
+  background: #ffffff;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.05);
+}
+
+.result-card h3 {
+  margin-top: 0;
+}
+
+.score-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.score-card span {
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.score-card strong {
+  margin-top: 8px;
+  font-size: 42px;
+}
+
+.analyzer-note {
+  grid-column: 1 / -1;
+  font-size: 13px;
+  color: #6b7280;
+}
+
+@media (max-width: 700px) {
+  .resume-results {
+    grid-template-columns: 1fr;
+  }
+}
