@@ -18,6 +18,25 @@ https://hunter-ai-i596.onrender.com/docs
 ---
 
 ## ✨ Features
+## 📸 Screenshots
+
+### 🔎 Job Search
+
+Users can browse available opportunities and filter jobs by their requirements.
+
+![Hunter AI Job Search](screenshots/job-search.png)
+
+### 🎯 Job Matching
+
+Hunter AI compares the user's skills with the skills required for a job and calculates a transparent match score.
+
+![Hunter AI Job Match](screenshots/job-match.png)
+
+### 📄 Resume Analyzer
+
+The resume analyzer detects skills, identifies areas for improvement, and suggests relevant roles.
+
+![Hunter AI Resume Analyzer](screenshots/resume-analyzer.png)
 
 ### 🔎 Job Search & Discovery
 - Browse available job opportunities
