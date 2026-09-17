@@ -1,67 +1,129 @@
-# Hunter AI — Full-Stack Job & Career Platform
+# 🚀 Hunter AI — Intelligent Job & Career Platform
 
-Hunter AI is a portfolio-ready full-stack job discovery and career management platform.
+Hunter AI is a full-stack job and career platform that helps users discover relevant opportunities, analyze their resume skills, and evaluate how well their profile matches a job.
 
-## Current MVP features
-- Responsive job search dashboard
-- Search and filters
-- Job details
-- Save jobs
+The project is built with React, FastAPI, REST APIs, and SQLAlchemy, with a deployment-ready architecture for modern web applications.
+
+## 🌐 Live Demo
+
+**Live Application:**  
+https://hunter-ai-frontend.onrender.com
+
+**Backend API:**  
+https://hunter-ai-i596.onrender.com
+
+**API Documentation:**  
+https://hunter-ai-i596.onrender.com/docs
+
+---
+
+## ✨ Features
+
+### 🔎 Job Search & Discovery
+- Browse available job opportunities
+- Search jobs by keywords
+- Filter jobs by location and job type
+- View job details
+- Display salary, experience, skills, and description
+
+### 🎯 Job Match
+Hunter AI compares a user's resume text with the skills required for a selected job.
+
+It provides:
+- Match percentage
+- Matched skills
+- Missing skills
+- Transparent matching explanation
+
+The current matching engine uses rule-based skill matching.
+
+### 📄 Resume Analyzer
+Users can paste their resume text and receive:
+- Resume score
+- Detected skills
+- Skills to improve
+- Recommended job roles
+
+The current analyzer uses a transparent rule-based approach rather than an external LLM.
+
+### 💼 Job Applications
 - Apply to jobs
-- Application tracking
-- Recruiter job posting API
-- FastAPI REST backend
-- SQLite development database
-- PostgreSQL-ready configuration
-- Resume scoring endpoint using transparent rule-based analysis
-- API documentation via FastAPI
+- Track applied jobs during the session
 
-## Tech stack
-Frontend: React + Vite + JavaScript + CSS
-Backend: Python + FastAPI + SQLAlchemy
-Database: SQLite for local development; PostgreSQL-ready
-Tools: Git, GitHub, Postman
+### 🔖 Saved Jobs
+- Save interesting jobs
+- Keep saved jobs in browser local storage
 
-## Run locally
+### 🌍 Full-Stack Deployment
+The application is deployed using:
+- Render Static Site for the frontend
+- Render Web Service for the backend
+- Environment variables for deployment configuration
+- CORS configuration for frontend/backend communication
 
-### Backend
-```bash
-cd backend
-python -m venv .venv
-# Windows:
-.venv\Scripts\activate
-# macOS/Linux:
-# source .venv/bin/activate
-pip install -r requirements.txt
-uvicorn app.main:app --reload
-```
+---
 
-Backend: http://127.0.0.1:8000
-API docs: http://127.0.0.1:8000/docs
+## 🛠️ Tech Stack
 
 ### Frontend
-Open a second terminal:
-```bash
-cd frontend
-npm install
-npm run dev
-```
+- React
+- JavaScript
+- Vite
+- CSS
+- Fetch API
+- Browser Local Storage
 
-Frontend: http://localhost:5173
+### Backend
+- Python
+- FastAPI
+- SQLAlchemy
+- REST API
+- Pydantic
 
-## Environment
-Copy `backend/.env.example` to `backend/.env` if you want to configure PostgreSQL.
+### Database
+- SQLite for local development
+- PostgreSQL-ready database configuration
 
-The project defaults to SQLite so a beginner can run it without installing PostgreSQL first.
+### Deployment
+- GitHub
+- Render
+- Docker
 
-## Important
-The resume analyzer in this MVP is a transparent scoring engine, not a generative AI model. An AI provider can be added later as a separate service without changing the core application.
+---
 
-## Suggested next upgrades
-- JWT authentication
-- PostgreSQL production database
-- Real resume PDF parsing
-- LLM-powered resume feedback
-- Recruiter dashboard UI
-- Docker + CI/CD
-- Cloud deployment
+## 🏗️ Architecture
+
+```text
+                    ┌──────────────────────┐
+                    │       User           │
+                    │   Web Browser        │
+                    └──────────┬───────────┘
+                               │
+                               ▼
+                    ┌──────────────────────┐
+                    │   React + Vite       │
+                    │     Frontend         │
+                    └──────────┬───────────┘
+                               │
+                         REST API / HTTP
+                               │
+                               ▼
+                    ┌──────────────────────┐
+                    │    FastAPI Backend   │
+                    │      Python          │
+                    └──────────┬───────────┘
+                               │
+               ┌───────────────┼───────────────┐ 
+               │               │               │
+               ▼               ▼               ▼
+        ┌────────────┐  ┌─────────────┐  ┌─────────────┐
+        │ Job APIs   │  │   Resume    │  │ Job Match   │
+        │            │  │  Analyzer   │  │   Engine    │
+        └─────┬──────┘  └─────────────┘  └─────────────┘
+              │
+              ▼
+        ┌────────────────┐
+        │   Database     │
+        │ SQLite /       │
+        │ PostgreSQL     │
+        └────────────────┘
